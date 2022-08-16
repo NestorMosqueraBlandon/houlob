@@ -1,16 +1,74 @@
-html,
-body {
+:root{
+  --header-height: 4rem;
+  --first-color: hsl(228, 66%, 53%);
+  --first-color-alt: hsl(228, 66%, 47%);
+  --first-color-light: hsl(228, 66%, 33%);
+  --first-color-lighten: hsl(228, 100%, 97%);
+  --second-color: hsl(25, 83%, 53%);
+  --title-color: hsl(228, 57%, 28%);
+  --text-color: hsl(228, 15%, 50%);
+  --text-color-light: hsl(228, 12%, 75%);
+  --border-color: hsl(228, 99%, 98%);
+  --body-color: #FFF;
+  --container-color: #FFF;
+}
+
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Roboto, sans-serif;
+  font-size: 1.6rem;
+  background-color: (--body-color);
+  color: var(--text-color);
+  transition: .3s;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  color: var(--text-color);
 }
 
-* {
-  box-sizing: border-box;
+input, 
+select, 
+button, 
+textarea{
+  outline: none;
+}
+
+button{
+  border: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+
+.container{
+  max-width: 102.4rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid{
+  display: grid;
+}
+
+.section{
+  padding: 4.5rem 0 2rem;
 }
